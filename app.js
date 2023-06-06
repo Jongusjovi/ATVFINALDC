@@ -51,7 +51,7 @@ app.get("/consulta-dados", (request, response) => {
 
     async function consultarDados(){
         const conn = await mysql.createConnection({
-            host: "localhost",
+            host: "mysql",
             user: "user",
             password: "passwd",
             database: "db_datacloud"
